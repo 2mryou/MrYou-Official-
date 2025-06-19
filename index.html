@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>MrYou's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="https://imagedelivery.net/LBWXYQ-XnKSYxbZ-NuYGqQ/06f74443-a411-4f2d-b65b-2d1d22d47400/avatarhd">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <div class="stars-container" id="starsContainer"></div>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>MrYou</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#projects">Projects</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img class="lol" src="idk.png           " style="filter: grayscale(100%);" alt="Discord Icon">
+            </div>
+            <div class="content">
+                <h1 data-aos="zoom-out-right" data-aos-duration="900" data-aos-delay="900">Hey, I'm <span>MrYou</span></h1>
+                <div class="typewriter" data-aos="zoom-out-right" data-aos-duration="1000" data-aos-delay="1000">
+                    I'm a <span></span>
+                </div>
+                <p data-aos="zoom-out-right" data-aos-duration="900" data-aos-delay="900">A passionate Discord server designer and gamer from the Arabic community, creating epic server experiences and mastering games like CS2, Valorant, and Rainbow Six Siege.</p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1200" data-aos-delay="1200">
+                    <a href="https://www.instagram.com/2mryou?igsh=MTBoZDEyam5mM2hscQ=="><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="btn" data-aos="fade-down-right" data-aos-duration="1300" data-aos-delay="1200">
+                    <a href="#projects"><button>Explore My Work</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
+                <img src="11-removebg-preview.png" style="filter: grayscale(100%);" alt="Gaming Setup">
+            </div>
+            <div class="about-content" data-aos="fade-left" data-aos-duration="1000">
+                <h2>About Me</h2>
+                <p>Yo, I'm MrYou, a 15-year-old from an Arabic country with a knack for designing awesome Discord servers and dominating in games. I've built servers that hit over 1k members and love gaming in CS2 (500+ hours), Valorant, and Rainbow Six Siege (1.6k hours). </p>
+                <a href="#timeline"><button>My Journey</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 data-aos="fade-up" data-aos-duration="1000">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <i class="fa-brands fa-discord"></i>
+                <p>Discord Server Design</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 95%;"></div>
+                </div>
+            </div>
+            <div class="skill" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <i class="fa-solid fa-gamepad"></i>
+                <p>Gaming (CS2, Valorant, R6S)</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <i class="fa-solid fa-code"></i>
+                <p>Voice acting  (Learning)</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 data-aos="fade-up" data-aos-duration="1000">My Projects</h2>
+        <div class="projects-container">
+            <div class="project" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="project-video">
+                    <img src="1ffecf73.png" style="filter: grayscale(100%);" alt="Discord Server Project 1">
+                </div>
+                <div class="project-info">
+                    <h3>Dragons Discord Server</h3>
+                    <p>A vibrant Discord server for the Arabic gaming community, reaching over 4k members with custom roles and channels.</p>
+                    <a href="discord.gg/dragonss" target="_blank">Join Server</a>
+                </div>
+            </div>
+           
+        
+        </div>
+    </section>
+
+    <section id="timeline">
+        <h2 data-aos="fade-up" data-aos-duration="1000">My Creative Journey</h2>
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            <div class="timeline-card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                <div class="card-content">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3>Discovering Discord</h3>
+                    <p>Started exploring Discord and fell in love with building communities for gamers.</p>
+                </div>
+            </div>
+            <div class="timeline-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="card-content">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    <h3>Gaming Mastery</h3>
+                    <p>Honed my skills in CS2, Valorant, and Rainbow Six Siege, becoming a competitive player.</p>
+                </div>
+            </div>
+            <div class="timeline-card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                <div class="card-content">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Learning Voice Acting</h3>
+                    <p>I have been trying to improve my skills in Voice Acting</p>
+                </div>
+            </div>
+            <div class="timeline-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+                <div class="card-content">
+                    <div class="card-icon">
+                        <i class="fa-brands fa-discord"></i>
+                    </div>
+                    <h3>Building Epic Servers</h3>
+                    <p>Designed Discord servers that grew to over 1k members, creating awesome communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-image left" data-aos="fade-right" data-aos-duration="1000">
+                <img src="bro.jpg" style="filter: grayscale(100%);" alt="Gaming Setup Left">
+            </div>
+            <div class="footer-content">
+                <h3 data-aos="fade-up" data-aos-duration="1000">Let's Connect</h3>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Want an epic Discord server or gaming tips? Hit me up!</p>
+                <div class="footer-links" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <a href="mailto:yassent909@gmail.com">ynjerri@gmail.com</a>
+                    <a href="https://discord.gg/dragonss">Official Discord Account ( notmryou )</a>
+                </div>
+                <div class="social-links" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <a href="https://www.instagram.com/2mryou?igsh=MTBoZDEyam5mM2hscQ=="><i class="fa-brands fa-instagram"></i></a>
+
+                </div>
+            </div>
+           
+        </div>
+        <div class="footer-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <p>© 2025 MrYou. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+
+        window.addEventListener('load', () => {
+            AOS.refresh();
+        });
+        window.addEventListener('scroll', () => {
+            AOS.refresh();
+        });
+
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+        }
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(type, 1000);
+        });
+
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        const words = ["Discord Designer", "Gamer"];
+        let i = 0;
+        let timer;
+
+        function type() {
+            document.querySelector(".typewriter span").textContent = words[i];
+            i = (i + 1) % words.length;
+            timer = setTimeout(type, 3000);
+        }
+
+        class StarsEffect {
+    constructor() {
+        this.container = document.getElementById('starsContainer');
+        this.stars = [];
+        this.maxStars = 200; // Increased from 100
+        this.shootingStarInterval = null;
+        this.meteorInterval = null;
+        
+        this.init();
+    }
+    
+    init() {
+        this.createStars();
+        this.startShootingStars();
+        this.startMeteorShower();
+        this.startPulsingStars();
+        
+        // Reduced refresh interval for more dynamic feel
+        setInterval(() => {
+            this.refreshStars();
+        }, 8000);
+        
+        // Add constellation effect
+        setInterval(() => {
+            this.createConstellation();
+        }, 20000);
+    }
+    
+    createStars() {
+        for (let i = 0; i < this.maxStars; i++) {
+            this.createStar();
+        }
+    }
+    
+    createStar() {
+        const star = document.createElement('div');
+        star.className = 'star';
+        
+        // Enhanced star types with new ones
+        const types = ['', 'large', 'small', 'sparkle', 'cross', 'micro', 'pulse', 'bright'];
+        const weights = [25, 15, 30, 10, 8, 20, 12, 5]; // Weighted probability
+        const randomType = this.getWeightedRandom(types, weights);
+        
+        if (randomType) {
+            star.classList.add(randomType);
+        }
+        
+        const x = Math.random() * window.innerWidth;
+        const y = Math.random() * window.innerHeight;
+        
+        star.style.left = x + 'px';
+        star.style.top = y + 'px';
+        star.style.animationDelay = Math.random() * 5 + 's';
+        
+        // Enhanced duration logic
+        const baseDuration = star.classList.contains('large') ? 6 : 
+                           star.classList.contains('small') ? 2 :
+                           star.classList.contains('sparkle') ? 8 :
+                           star.classList.contains('cross') ? 4 :
+                           star.classList.contains('micro') ? 1.5 :
+                           star.classList.contains('pulse') ? 3 :
+                           star.classList.contains('bright') ? 5 : 3;
+        
+        star.style.animationDuration = (baseDuration + Math.random() * 3) + 's';
+        
+        this.container.appendChild(star);
+        this.stars.push(star);
+    }
+    
+    getWeightedRandom(items, weights) {
+        const totalWeight = weights.reduce((sum, weight) => sum + weight, 0);
+        let random = Math.random() * totalWeight;
+        
+        for (let i = 0; i < items.length; i++) {
+            if (random < weights[i]) {
+                return items[i];
+            }
+            random -= weights[i];
+        }
+        return items[0];
+    }
+    
+    createShootingStar() {
+        const shootingStar = document.createElement('div');
+        
+        // Enhanced shooting star types
+        const shootingTypes = ['shooting-star', 'shooting-star-fast', 'shooting-star-bright', 'meteor'];
+        const randomShootingType = shootingTypes[Math.floor(Math.random() * shootingTypes.length)];
+        shootingStar.className = randomShootingType;
+        
+        // More varied starting positions
+        const direction = Math.random();
+        if (direction < 0.25) {
+            // From top
+            shootingStar.style.left = Math.random() * window.innerWidth + 'px';
+            shootingStar.style.top = '-20px';
+        } else if (direction < 0.5) {
+            // From top-right
+            shootingStar.style.left = window.innerWidth + 'px';
+            shootingStar.style.top = Math.random() * (window.innerHeight * 0.3) + 'px';
+        } else if (direction < 0.75) {
+            // From left
+            shootingStar.style.left = '-20px';
+            shootingStar.style.top = Math.random() * window.innerHeight + 'px';
+        } else {
+            // From top-left diagonal
+            shootingStar.style.left = Math.random() * (window.innerWidth * 0.3) + 'px';
+            shootingStar.style.top = '-20px';
+        }
+        
+        shootingStar.style.animationDuration = (0.8 + Math.random() * 1.2) + 's';
+        this.container.appendChild(shootingStar);
+        
+        setTimeout(() => {
+            if (shootingStar.parentNode) {
+                shootingStar.parentNode.removeChild(shootingStar);
+            }
+        }, 3000);
+    }
+    
+    startShootingStars() {
+        // Much more frequent shooting stars
+        this.shootingStarInterval = setInterval(() => {
+            if (Math.random() > 0.3) { // Increased from 0.7
+                this.createShootingStar();
+            }
+        }, 800); // Reduced from 2000ms
+    }
+    
+    startMeteorShower() {
+        // Periodic meteor showers
+        setInterval(() => {
+            if (Math.random() > 0.7) {
+                this.createMeteorShower();
+            }
+        }, 15000);
+    }
+    
+    createMeteorShower() {
+        const meteorCount = 3 + Math.floor(Math.random() * 5);
+        for (let i = 0; i < meteorCount; i++) {
+            setTimeout(() => {
+                this.createShootingStar();
+            }, i * 200);
+        }
+    }
+    
+    startPulsingStars() {
+        setInterval(() => {
+            const randomStar = this.stars[Math.floor(Math.random() * this.stars.length)];
+            if (randomStar && !randomStar.classList.contains('pulsing')) {
+                randomStar.classList.add('pulsing');
+                setTimeout(() => {
+                    randomStar.classList.remove('pulsing');
+                }, 2000);
+            }
+        }, 1000);
+    }
+    
+    createConstellation() {
+        const constellationSize = 4 + Math.floor(Math.random() * 4);
+        const centerX = Math.random() * (window.innerWidth - 200) + 100;
+        const centerY = Math.random() * (window.innerHeight - 200) + 100;
+        
+        for (let i = 0; i < constellationSize; i++) {
+            const star = document.createElement('div');
+            star.className = 'star constellation-star';
+            
+            const angle = (i / constellationSize) * Math.PI * 2;
+            const radius = 30 + Math.random() * 40;
+            const x = centerX + Math.cos(angle) * radius;
+            const y = centerY + Math.sin(angle) * radius;
+            
+            star.style.left = x + 'px';
+            star.style.top = y + 'px';
+            star.style.animationDelay = i * 0.2 + 's';
+            
+            this.container.appendChild(star);
+            
+            setTimeout(() => {
+                if (star.parentNode) {
+                    star.parentNode.removeChild(star);
+                }
+            }, 8000);
+        }
+    }
+    
+    refreshStars() {
+        const starsToRemove = Math.min(30, this.stars.length); // Increased from 20
+        for (let i = 0; i < starsToRemove; i++) {
+            const randomIndex = Math.floor(Math.random() * this.stars.length);
+            const star = this.stars[randomIndex];
+            if (star && star.parentNode) {
+                star.parentNode.removeChild(star);
+                this.stars.splice(randomIndex, 1);
+            }
+        }
+        
+        for (let i = 0; i < starsToRemove; i++) {
+            this.createStar();
+        }
+    }
+}
+
+// Initialize stars effect
+document.addEventListener('DOMContentLoaded', () => {
+    const starsEffect = new StarsEffect();
+});
+        
+    </script>
+</body>
+
+</html>
